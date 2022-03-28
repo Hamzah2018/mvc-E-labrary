@@ -1,6 +1,7 @@
 <?php
 // namespace __DIR__.Pc\MvcELabrary\system;
-namespace MvcELabrary\app\system;
+
+namespace  MvcELabrary\app\system;
 class AppSystem{
   function __construct()
   {

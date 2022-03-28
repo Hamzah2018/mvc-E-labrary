@@ -3,7 +3,11 @@
 //$app=new App();
 // use 
 //require_once 'app/system/app.php';
-require_once __DIR__ .  'vendor/autoload.php';
+
+use MvcELabrary\app\system\AppSystem;
+
+require_once __DIR__ .  '/vendor/autoload.php';
+
 
 $app = new AppSystem();
 // use SecTheater\Http\Route;

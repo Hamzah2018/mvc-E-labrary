@@ -2,7 +2,7 @@
     "name": "pc/mvc-e-labrary",
     "autoload": {
         "psr-4": {
-            "Pc\\MvcELabrary\\": "src/"
+            "MvcELabrary\\": "src/"
         }
     },
     "authors": [
@@ -15,5 +15,4 @@
         "vlucas/phpdotenv": "^5.4",
         "symfony/var-dumper": "^6.0"
     }
-   
 }
