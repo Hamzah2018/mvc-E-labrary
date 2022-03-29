@@ -6,6 +6,8 @@ use eliber\app\controllers\PublishersController;
 use eliber\app\system\AppSystem;
 use eliber\app\system\Router;
 use eliber\app\controllers\UsersController;
+use eliber\app\controllers\homeController;
+
 use Dotenv\Dotenv;
 
 $dotenv = Dotenv::createImmutable(dirname(__DIR__));//createImmutable(__DIR__);
@@ -34,6 +36,7 @@ Router::get('/books',function(){
 });
 
 Router::get('/new_user',[UsersController::class,'register']);
+Router::get('/home',[homeController::class,'home']);
 
 Router::get('/remove_user',[UsersController::class,'delete']);
 
