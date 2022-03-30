@@ -42,6 +42,8 @@ Router::get('/new_user',[UsersController::class,'register']);
 Router::get('/home',[homeController::class,'home']);
 
 Router::get('/book',[bookController::class,'book']);
+Router::get('/new_book',[bookController::class,'newBook']);
+// Router::post('/save_book',[UsersController::class,'createBook']);
 
 Router::get('/remove_user',[UsersController::class,'delete']);
 
