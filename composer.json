@@ -1,18 +1,11 @@
 {
-    "name": "pc/mvc-e-labrary",
-    "autoload": {
-        "psr-4": {
-            "MvcELabrary\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Hamzah Al-Hagi",
-            "email": "ha.773774142@gmail.com"
-        }
-    ],
-    "require": {
-        "vlucas/phpdotenv": "^5.4",
-        "symfony/var-dumper": "^6.0"
+  
+  "autoload": {
+    "psr-4": {
+      "eliber\\": "./"
     }
+  },
+  "require": {
+    "vlucas/phpdotenv": "^5.4"
+  }
 }

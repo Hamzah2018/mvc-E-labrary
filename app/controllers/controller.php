@@ -1,17 +1,15 @@
 <?php
+namespace eliber\app\controllers;
 
-class Controller {
-    public function model($model_name){
-        require_once 'app/models/'.$model_name.'.php';
+use eliber\app\system\AppSystem;
+use eliber\app\system\Request;
+use eliber\app\system\Router;
 
-        return new $model_name();
-    }
+class Controller{
 
-    public function view($view_name,$data){
+   function view($viewName,$params=[]){
+       AppSystem::$appSystem->router->view($viewName,$params);
+   }
 
-        require_once 'app/views/'.$view_name.'.php';
-
-    }
 }
-
 ?>
