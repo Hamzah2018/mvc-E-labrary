@@ -3,12 +3,13 @@ namespace eliber\app\controllers;
 
 // use eliber\app\models\AUthor;
 
-class authorsController extends Controller{
+// Router::get('/t',[a::class,' ']);
+class addressesController extends Controller{
     // function  authors(){
     //     $this->view('auther');
     // }
-    function newAuther(){
-        $this->view('new_author');
+    function newAddresses(){
+        $this->view('new_addresses');
     }
         public function show(){
     }

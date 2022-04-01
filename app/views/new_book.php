@@ -1534,8 +1534,8 @@
         <input name="title" type="text" id="multicol-username" class="form-control" placeholder="books" />
       </div>
 
-      <div class="row g-3">
-    </div>
+      <!-- <div class="row g-3">
+    </div> -->
       <div class="col-md-6">
         <label class="form-label" for="multicol-username">Book image</label>
         <div class="input-group">
@@ -1587,6 +1587,7 @@
           </div>
         </div>
       </div>
+      
     </div>
     
     
@@ -1615,7 +1616,7 @@
       © <script>
       document.write(new Date().getFullYear())
       </script>
-      , made with ❤️ by <a href="https://themeselection.com/" target="_blank" class="footer-link fw-bolder">ThemeSelection</a>
+      , made with ❤️ by <a href="#" target="_blank" class="footer-link fw-bolder">Hamzah</a>
     </div>
     <div>
       

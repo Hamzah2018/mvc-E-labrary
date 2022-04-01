@@ -1527,31 +1527,23 @@
 <div class="card mb-4">
   <h5 class="card-header">Multi Column with Form Separator</h5>
   <form class="card-body" action="/save_user" method="POST">
-    <h6>بيانات المستخدم</h6>
-    <div class="row g-3">
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-username">اسم المستخدم</label>
-        <input name="name" type="text" id="multicol-username" class="form-control" placeholder="john.doe" />
+    <h6> طريق الدفع</h6>
+    <div class="col-md-6">
+        <label class="form-label" for="multicol-username">اسم الطريقه</label>
+        <input name="title" type="text" id="multicol-username" class="form-control" placeholder="books" />
       </div>
-      <div class="col-md-6">
-        <label class="form-label" for="multicol-email">اليمل المستخدم</label>
-        <div class="input-group input-group-merge">
-          <input  name="email"type="text" id="multicol-email" class="form-control" placeholder="john.doe" aria-label="john.doe" aria-describedby="multicol-email2" />
-          <span class="input-group-text" id="multicol-email2">@example.com</span>
-        </div>
-      </div>
+      <di class="col-md-6">
+        <label class="form-label" for="multicol-username">الصوره</label>
+        <div class="input-group">
+  <input name="image" type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+  <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Upload</button>
+</div>
+  </di
+      <div class="row g-3">
+    </div>
       <div class="col-md-6">
         <div class="form-password-toggle">
-          <label class="form-label" for="multicol-password">كلمة المرو</label>
-          <div class="input-group input-group-merge">
-            <input  name="password" type="password" id="multicol-password" class="form-control" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="multicol-password2" />
-            <span class="input-group-text cursor-pointer" id="multicol-password2"><i class="bx bx-hide"></i></span>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="form-password-toggle">
-          <label class="form-label" for="multicol-confirm-password">فعالية المستخدم</label>
+          <label class="form-label" for="multicol-confirm-password">الفعاليه</label>
           <div class="input-group input-group-merge">
           <label class="switch">
               <input name="is_active" value=1 type="checkbox" checked class="switch-input" />
@@ -1559,7 +1551,7 @@
                 <span class="switch-on"></span>
                 <span class="switch-off"></span>
               </span>
-              <span class="switch-label">مفعل</span>
+              <span class="switch-label">فعال</span>
             </label>
           </div>
         </div>
@@ -1592,7 +1584,7 @@
       © <script>
       document.write(new Date().getFullYear())
       </script>
-      , made with ❤️ by <a href="#" target="_blank" class="footer-link fw-bolder">Hamzah</a>
+      , made with ❤️ by <a href="https://themeselection.com/" target="_blank" class="footer-link fw-bolder">Hamzah</a>
     </div>
     <div>
       
