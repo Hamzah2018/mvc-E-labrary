@@ -12,6 +12,7 @@ use eliber\app\controllers\publisherController;
 use eliber\app\controllers\cityController;
 use eliber\app\controllers\offerController;
 use eliber\app\controllers\orderController;
+use eliber\app\controllers\paymentController;
 
 
 use Dotenv\Dotenv;
@@ -53,6 +54,7 @@ Router::get('/new_publisher',[publisherController::class,'newPublisher']);
 Router::get('/new_city',[cityController::class,'newCity']);
 Router::get('/new_offer',[offerController::class,'newOffer']);
 Router::get('/new_order',[orderController::class,'newOrder']);
+Router::get('/new_payment',[paymentController::class,'newPayment']);
                               //                         newPublisher
 // Router::get('/new_book',[bookController::class,'newBook']);
 // Router::post('/save_book',[UsersController::class,'createBook']);
