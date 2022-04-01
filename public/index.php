@@ -9,6 +9,7 @@ use eliber\app\controllers\UsersController;
 use eliber\app\controllers\homeController;
 use eliber\app\controllers\bookController;
 use eliber\app\controllers\publisherController;
+use eliber\app\controllers\cityController;
 
 
 use Dotenv\Dotenv;
@@ -47,6 +48,7 @@ Router::get('/new_book',[bookController::class,'newBook']);
 //              new_authorauthorsController
 Router::get('/new_author',[authorsController::class,'newAuther']);
 Router::get('/new_publisher',[publisherController::class,'newPublisher']);
+Router::get('/new_city',[cityController::class,'newCity']);
                               //                         newPublisher
 // Router::get('/new_book',[bookController::class,'newBook']);
 // Router::post('/save_book',[UsersController::class,'createBook']);
