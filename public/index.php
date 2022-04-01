@@ -6,6 +6,7 @@ use eliber\app\controllers\PublishersController;
 use eliber\app\system\AppSystem;
 use eliber\app\system\Router;
 use eliber\app\controllers\UsersController;
+// <<<<<<< HEAD
 use eliber\app\controllers\homeController;
 use eliber\app\controllers\bookController;
 use eliber\app\controllers\publisherController;
@@ -14,13 +15,15 @@ use eliber\app\controllers\offerController;
 use eliber\app\controllers\orderController;
 use eliber\app\controllers\paymentController;
 use eliber\app\controllers\addressesController;
-
-
+use eliber\app\controllers\categoryController;
 use Dotenv\Dotenv;
+// >>>>>>> category
+
+
 $dotenv = Dotenv::createImmutable(dirname(__DIR__));//createImmutable(__DIR__);
 $dotenv->load();
 
-$config=array(
+$config = array(
   'servername'=>$_ENV['DB_SERVER_NAME'],
   'dbname'=>$_ENV['DB_NAME'],
   'dbpass'=>$_ENV['DB_PASSWORD'],
@@ -65,6 +68,7 @@ Router::get('/remove_user',[UsersController::class,'delete']);
 
 Router::post('/users',[UsersController::class,'show']);
 Router::get('/new_user',[UsersController::class,'newUser']);
+Router::get('/category',[categoryController::class,'category']);
 
 Router::post('/save_user',[UsersController::class,'saveUser']);
 Router::get('/save_author',[AuthorsController::class,'createAuthor']);

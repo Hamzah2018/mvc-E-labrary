@@ -6,7 +6,7 @@ namespace eliber\app\controllers;
 class categoryController extends Controller{
 
     function  category(){
-                     
+
         $this->view('category');
     }
         public function show(){
