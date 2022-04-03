@@ -2,14 +2,8 @@
 namespace eliber\app\models;
 use eliber\app\system\AppSystem;
 class Model{
-    public static  $tblName;
-   
-
-   
-   
+    public static  $tblName;   
     function save():bool{
-        
-      
         $values=array();
         $columns=array();
         //get_object_
@@ -18,8 +12,7 @@ class Model{
             if($property!=self::$tblName)
             {
                 $values[]=is_string($property)?"'".$property."'":$property;
-                $columns[]=$key;}
-
+                $columns[]=$key;}   
         }
         $values=implode(",",$values);
         $columns=implode(",",$columns);
@@ -33,5 +26,22 @@ class Model{
        // return true;
      //echo $sql_query;
     }
+    public function getAll(){
+        $sql_query ="select * from ".self::$tblName."";
+        $stmt=AppSystem::$appSystem->database->pdo->prepare($sql_query);
+       $stmt -> execute();
+        return $stmt->fetchAll();
+    }
+    public function getSingleRow($id){
+        $sql_query="select * from ".self::$tblName." where id=".$id."";
+       
+       //echo $sql_query;
+         $stmt=AppSystem::$appSystem->database->pdo->prepare($sql_query);
+        $stmt->execute();
+        return $stmt->fetchObject();
+        
+
+    }
 }
+
 ?>

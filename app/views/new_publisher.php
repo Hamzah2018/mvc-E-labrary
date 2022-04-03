@@ -1550,7 +1550,7 @@
         <input name="email" type="email" id="multicol-username" class="form-control" placeholder="@something.com" />
       </div>
       <div class="col-md-6">
-        <label class="form-label" for="email">عنون</label>
+        <label class="form-label" for="address">عنون</label>
         <input name="address" type="text" id="multicol-username" class="form-control" placeholder="@something.com" />
       </div>
       <div class="col-md-6">

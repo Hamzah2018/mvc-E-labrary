@@ -1,8 +1,5 @@
 <?php
 namespace eliber\app\system;
-
-
-
 class Database{
     public $pdo;
     function __construct($dbConfig)
@@ -12,16 +9,11 @@ class Database{
         $pass=$dbConfig["dbpass"];
         $this->pdo=new \PDO($dsn,$username,$pass);
     }
-
     public function insert(){
-
     }
     public function udpate(){
-
     }
     public function delete(){
-        
     }
-
 }
 ?>

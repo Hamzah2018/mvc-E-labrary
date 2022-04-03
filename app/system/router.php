@@ -7,7 +7,6 @@ class Router{
     public function __construct($request)
     {
         $this->request=$request;
-        
     }
 
 
@@ -31,7 +30,7 @@ class Router{
         $route=$this->request->getRoute();
         $method=$this->request->getRequestMethod();
             $callback=self::$routes[$method][$route];
-
+           // if(key_exists($route,self::$routes['GET']||key_exists($route,self::$routes['POST']))){
             if(isset($callback))
             {
                 if(is_array($callback))
@@ -43,8 +42,11 @@ class Router{
             else {
                 echo "page not found";
             }
-
-    }
+        }
+ //       else{
+   //         echo "error";
+  //      }
+  //  }
 
     public function view($v,$params){
         require_once __DIR__."/../views/$v.php";
