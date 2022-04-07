@@ -52,6 +52,13 @@ Router::get('/home',[homeController::class,'home']);
 
 Router::get('/book',[bookController::class,'book']);
 Router::get('/new_book',[bookController::class,'newBook']);
+// Router::get('/add_category',[categoryController::class,'createCat']);
+// Router::post('/save_category',[categoryController::class,'store']);
+// Router::get('/edit_category/{id}',[categoryController::class,'edit']);
+// Router::get('/remove_category',[categoryController::class,'remove']);
+// Router::get('/update_category',[categoryController::class,'update']);
+// bookControllerlist_book
+Router::get('/list_book',[bookController::class,'listAllb']);
 //              new_authorauthorsController
 Router::get('/new_author',[authorsController::class,'newAuther']);
 Router::get('/new_publisher',[publisherController::class,'newPublisher']);
