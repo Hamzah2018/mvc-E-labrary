@@ -49,6 +49,7 @@ Router::get('/books',function(){
 
 
 Router::get('/new_user',[UsersController::class,'register']);
+Router::get('/list_users',[usersController::class,'listAllU']);
 Router::get('/home',[homeController::class,'home']);
 
 Router::get('/book',[bookController::class,'book']);
