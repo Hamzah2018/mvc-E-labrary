@@ -9,6 +9,7 @@ use eliber\app\controllers\UsersController;
 // <<<<<<< HEAD
 use eliber\app\controllers\homeController;
 use eliber\app\controllers\bookController;
+                         //publisherController
 use eliber\app\controllers\publisherController;
 use eliber\app\controllers\cityController;
 use eliber\app\controllers\offerController;
@@ -63,6 +64,7 @@ Router::get('/list_book',[bookController::class,'listAllb']);
 Router::get('/new_author',[authorsController::class,'newAuther']);
 Router::get('/list_author',[authorsController::class,'listAllA']);
 Router::get('/new_publisher',[publisherController::class,'newPublisher']);
+Router::get('/list_publisher',[publisherController::class,'listAllP']);
 Router::get('/new_city',[cityController::class,'newCity']);
 Router::get('/new_offer',[offerController::class,'newOffer']);
 Router::get('/new_order',[orderController::class,'newOrder']);
