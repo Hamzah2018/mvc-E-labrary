@@ -61,6 +61,7 @@ Router::get('/new_book',[bookController::class,'newBook']);
 Router::get('/list_book',[bookController::class,'listAllb']);
 //              new_authorauthorsController
 Router::get('/new_author',[authorsController::class,'newAuther']);
+Router::get('/list_author',[authorsController::class,'listAllA']);
 Router::get('/new_publisher',[publisherController::class,'newPublisher']);
 Router::get('/new_city',[cityController::class,'newCity']);
 Router::get('/new_offer',[offerController::class,'newOffer']);
