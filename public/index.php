@@ -17,6 +17,7 @@ use eliber\app\controllers\orderController;
 use eliber\app\controllers\paymentController;
 use eliber\app\controllers\addressesController;
 use eliber\app\controllers\categoryController;
+use eliber\app\controllers\citiesController;
 use Dotenv\Dotenv;
 // >>>>>>> category
 
@@ -68,6 +69,9 @@ Router::get('/new_publisher',[publisherController::class,'newPublisher']);
 Router::get('/list_publisher',[publisherController::class,'listAllP']);
 Router::get('/new_city',[cityController::class,'newCity']);
 Router::get('/new_offer',[offerController::class,'newOffer']);
+Router::get('/list_offer',[offerController::class,'listAllOf']);
+
+
 Router::get('/new_order',[orderController::class,'newOrder']);
 Router::get('/new_payment',[paymentController::class,'newPayment']);
 Router::get('/new_addresses',[addressesController::class,'newAddresses']);
@@ -87,6 +91,10 @@ Router::post('/save_category',[categoryController::class,'store']);
 Router::get('/edit_category/{id}',[categoryController::class,'edit']);
 Router::get('/remove_category',[categoryController::class,'remove']);
 Router::get('/update_category',[categoryController::class,'update']);
+Router::get('/book',[bookController::class,'book']);
+Router::get('/new_city',[cityController::class,'newCity']);
+
+Router::get('/list_city',[citiesController::class,'listAllC']);
 
 Router::post('/save_user',[UsersController::class,'saveUser']);
 Router::get('/save_author',[AuthorsController::class,'createAuthor']);
