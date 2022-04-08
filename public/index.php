@@ -74,6 +74,8 @@ Router::get('/list_offer',[offerController::class,'listAllOf']);
 
 Router::get('/new_order',[orderController::class,'newOrder']);
 Router::get('/new_payment',[paymentController::class,'newPayment']);
+//////////////list_payment
+Router::get('/list_payment',[paymentController::class,'listAllPy']);
 Router::get('/new_addresses',[addressesController::class,'newAddresses']);
                               //                         newPublisher
 // Router::get('/new_book',[bookController::class,'newBook']);
